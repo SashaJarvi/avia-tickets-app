@@ -1,11 +1,17 @@
 {
-  "name": "avia-tickets-js",
+  "name": "avia-tickets-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SashaJarvi/avia-tickets-app.git"
   },
   "keywords": [],
   "author": "",
